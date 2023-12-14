@@ -1,5 +1,5 @@
 function encriptar(){
-passSistema= "toMazELGOLKa";
+passSistema= "aymeolvido";
 msgError = "Error en la contraseña,vuelve a intentarlo";
 var mensaje = document.getElementById("msg").value;
 var password = document.getElementById("pass").value;
@@ -33,6 +33,9 @@ document.getElementById("error").innerHTML = msgError;
 
 function desencriptar(){
 
+var mensajeCodigo = document.getElementById("msgCodigo").value;
+var decrypted = atob(mensajeCodigo)
+document.getElementById("demo2").innerHTML = decrypted;
 
 
 
